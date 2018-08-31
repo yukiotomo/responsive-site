@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Abel';
+body {
+  font-family: 'Abel', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /* ベースとなるフォントサイズの定義 */
+}
+
+body {
+  font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  /* フォントの種類 */
+  font-size: 1.4rem;
+  /* フォントサイズ */
+  line-height: 1.6;
+  /* 行間 */
+  letter-spacing: .1em;
+  /* 文字間隔 */
+  color: #4c4c4c;
+  /* 文字色 */
+  background-color: #fdfcf6;
+  /* 背景色 */
+}
+
+html
+/* root */
+
+  {
+  font-size: 62.5%;
+  /* =10px =100% */
+}
+
+body {
+  /* すべて14px
+------------------------------------------------------------*/
+  font-size: 14px;
+  font-size: 140%;
+  font-size: 1.4em;
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 20px;
+  /* そのまま20px */
+  font-size: 200%;
+  /* 親要素bodyの14pxを基準に200% =28px */
+  font-size: 2em;
+  /* 親要素bodyの14pxを基準に2倍 =28px */
+  font-size: 2rem;
+  /* rootの10pxを基準に2倍 =20px */
+}
+
+div {
+  font-size: 12px;
+  /* そのまま12px */
+  font-size: 120%;
+  /* 親要素bodyの14pxを基準に120% =16.8px(約17px) */
+  font-size: 1.2em;
+  /* 親要素bodyの14pxを基準に1.2倍 =16.8px(約17px) */
+  font-size: 1.2rem;
+  /* rootの10pxを基準に1.2倍 =12px */
+}
+
+div p {
+  font-size: 12px;
+  /* そのまま12px */
+  font-size: 120%;
+  /* 親要素divの17pxを基準に120% =20.4px(約20px) */
+  font-size: 1.2em;
+  /* 親要素divの17pxを基準に1.2倍 =20.4px(約20px) */
+  font-size: 1.2rem;
+  /* rootの10pxを基準に1.2倍 =12px */
+}
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*ヘッダー*/
+
+header .box {
+  background-image: url("../images/neko.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 768px) {
+  header .box {
+    height: 250px;
+  }
+}
+
+#skills {
+  background-color: pink;
+}
+
+#skills h2 {
+  color: #fdfcf6;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#skills .container {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  #skills .container {
+    flex-direction: column;
+  }
+}
+
+#skills .skill-box {
+  -webkit-flex: 1;
+  flex: 1;
+  padding: 20px;
+  background-color: #fdfcf6;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 15px;
+}
+
+#skills i {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 5px;
+  padding-top: 15px;
+  background-color: #14c0c9;
+  font-size: 4.5rem;
+  color: #FFF;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+#skills h3 {
+  color: #14c0c9;
+  margin-bottom: 10px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  padding: 10px;
+  background: pink;
+}
+
+.radius {
+  background-color: #ff0000;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
